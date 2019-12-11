@@ -13,7 +13,7 @@ session.click_button("Google Search")
 # now click the edgewords site link, 
 # but restrict the serach to the search results DIV on the page
 session.within(:css, '#search') do
-    session.click_link("https://www.edgewordstraining.co.uk", match: first)
+    session.click_link("https://www.edgewordstraining.co.uk")
   end
   
 sleep(2)

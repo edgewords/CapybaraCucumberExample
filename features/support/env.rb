@@ -2,7 +2,7 @@
 # It can contain defaults such as the Capybara driver you wish to use, timeouts etc.
 
 require 'selenium-webdriver'
-require 'capybara'
+#require 'capybara'
 require 'capybara/cucumber'
 require 'rspec/expectations'
 
