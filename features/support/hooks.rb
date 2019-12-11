@@ -4,8 +4,8 @@ Before do |scenario|
     $world = self
 end
 
-After do |scenro|
-    if scenro.failed?
+After do |scenario|
+    if scenario.failed?
         resultFileName = Time.now.strftime("failshot__%d_%m_%Y__%H_%M_%S")+".png"
         save_screenshot("./results/" + resultFileName)
         #put screenshot into html results file
@@ -13,5 +13,5 @@ After do |scenro|
     end
 
     #stop everything if we get a fail:
-    Cucumber.wants_to_quit = true if scenro.failed?
+    Cucumber.wants_to_quit = true if scenario.failed?
 end
